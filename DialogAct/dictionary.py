@@ -10,6 +10,5 @@ def dictionary(texts):
 
     dictionary = corpora.Dictionary(texts)
     dictionary.save('/tmp/speechact.dict')
-    #print(dictionary.token2id)
-    #print(dictionary[61])
+
 
