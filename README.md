@@ -1,11 +1,11 @@
 # SpeechAct
 code used to prepare Switchboard Dialog Act corpus in the form of vector for SVM classifier
 
-preprocess
-    read the SWDA corpus
-    uses Porter Stemmer to convert words to there stem
-    stop words which found in "corpus/stopword" will be removed 
-    words with frequency count less than 10 is removed 
+preprocess <br />
+    + read the SWDA corpus
+    + uses Porter Stemmer to convert words to there stem
+    + stop words which found in "corpus/stopword" will be removed 
+    + words with frequency count less than 10 is removed 
 dictionary
     prepare a dictionary using gensim library and the preprocessed data
 DocToBOw
