@@ -1,7 +1,7 @@
 __author__ = 'rodas'
 
 from gensim import corpora, models, similarities
-from lsiTosvm  import  Atag
+from classlabel  import  Atag
 import fileinput
 
 def postprocess():
