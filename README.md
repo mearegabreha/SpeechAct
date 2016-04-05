@@ -1,18 +1,18 @@
 # SpeechAct
 code used to prepare Switchboard Dialog Act corpus in the form of vector for SVM classifier
 
-preprocess <br />
-    + read the SWDA corpus
-    + uses Porter Stemmer to convert words to there stem
-    + stop words which found in "corpus/stopword" will be removed 
-    + words with frequency count less than 10 is removed 
-dictionary
-    prepare a dictionary using gensim library and the preprocessed data
-DocToBOw
-    create a BOW corpus using the dictionary created before
-lsi_topic_trans/lda_topic_trans
-    transform the BOW corpus to other representation using LSI/LDA
-postprocess
-    append class label to the vectors
-final-cleanup
-    remove unnecessary characters and prepare the final corpus for LIBSVM
+preprocess.py <br />
+    + read the SWDA corpus <br />
+    + uses Porter Stemmer to convert words to there stem <br />
+    + stop words which found in "corpus/stopword" will be removed  <br />
+    + words with frequency count less than 10 is removed <br />
+dictionary.py <br />
+    + prepare a dictionary using gensim library and the preprocessed data <br />
+DocToBOw.py <br />
+    + create a BOW corpus using the dictionary created before <br />
+lsi_topic_trans.py/lda_topic_trans.py <br />
+    + transform the BOW corpus to other representation using LSI/LDA <br />
+postprocess.py <br />
+    + append class label to the vectors <br />
+final-cleanup.py <br />
+    + remove unnecessary characters and prepare the final corpus for LIBSVM <br />
