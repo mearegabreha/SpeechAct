@@ -79,7 +79,7 @@ def precision_recall_calc(testfile, predictfile):
     for i in range (0, len(labels)):
         TPFP = TPs[i]+FPs[i]
         if TPFP > 0:
-            precision = (TPs[i]/TPFP)*100
+            precision = TPs[i]/TPFP
             precisions.append(precision)
     print("Precision per class")
     print (precisions)
@@ -89,7 +89,8 @@ def precision_recall_calc(testfile, predictfile):
     for i in range (0, len(labels)):
         TPFN = FNs[i]+TPs[i]
         if TPFN > 0:
-            recall = (TPs[i]/TPFN)*100
+            recall = TPs[i]/TPFN
+            recall *= 100
             recalls.append(recall)
     print("Recall per class")
     print (recalls)
