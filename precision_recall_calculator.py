@@ -1,7 +1,7 @@
 __author__ = 'meareg'
 
 '''Example usage from command prompt enter:
-  python3.4 precision_recall_calculator c:/testfile, c:/output '''
+  python3.4 precision_recall_calculator.py c:/testfile, c:/output '''
 
 from sys import argv, exit
 import os.path
